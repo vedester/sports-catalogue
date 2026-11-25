@@ -1,0 +1,131 @@
+
+@import "tailwindcss";
+
+/* =========================================
+   LIGHT THEME
+========================================= */
+
+:root {
+  color-scheme: light;
+
+  --background: #f7f7f5;
+  --foreground: #18181b;
+
+  --surface: #ffffff;
+
+  /* Text hierarchy */
+  --muted: #52525b;
+  --muted-subtle: #71717a;
+
+  --border: #e4e4e7;
+
+  --primary: #f97316;
+  --primary-foreground: #ffffff;
+
+  --ring: #f97316;
+}
+
+/* =========================================
+   DARK THEME
+========================================= */
+
+.dark {
+  color-scheme: dark;
+
+  --background: #09090b;
+  --foreground: #fafafa;
+
+  --surface: #18181b;
+
+  /* Text hierarchy */
+  --muted: #c4c4cc;
+  --muted-subtle: #a1a1aa;
+
+  --border: #27272a;
+
+  --primary: #f97316;
+  --primary-foreground: #ffffff;
+
+  --ring: #fb923c;
+}
+
+/* =========================================
+   TAILWIND THEME MAPPING
+========================================= */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-surface: var(--surface);
+
+  --color-muted: var(--muted);
+  --color-muted-subtle: var(--muted-subtle);
+
+  --color-border: var(--border);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-ring: var(--ring);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* =========================================
+   GLOBAL STYLES
+========================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+
+  background: var(--background);
+  color: var(--foreground);
+
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+
+  font-size: 16px;
+  line-height: 1.6;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Keyboard accessibility */
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+}
+
+/* Text selection */
+
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* =========================================
+   THEME TOGGLE ICON VISIBILITY
+========================================= */
+
+.theme-icon-moon {
+  display: block;
+}
+
+.theme-icon-sun {
+  display: none;
+}
+
+.dark .theme-icon-moon {
+  display: none;
+}
+
+.dark .theme-icon-sun {
+  display: block;
+}
