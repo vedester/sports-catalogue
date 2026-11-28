@@ -379,3 +379,59 @@ The first working milestone will be:
 9. Display products dynamically on the frontend.
 
 **Definition of success:** A customer should be able to visit the Next.js website, retrieve products from the Django API, browse categories and view product details without using hardcoded product data.
+
+
+
+
+frontend/
+└── src/
+    ├── app/
+    │   ├── layout.tsx
+    │   ├── page.tsx
+    │   ├── globals.css
+    │   │
+    │   ├── products/
+    │   │   ├── page.tsx
+    │   │   └── [slug]/
+    │   │       └── page.tsx
+    │   │
+    │   ├── categories/
+    │   │   ├── page.tsx
+    │   │   └── [slug]/
+    │   │       └── page.tsx
+    │   │
+    │   ├── brands/
+    │   │   ├── page.tsx
+    │   │   └── [slug]/
+    │   │       └── page.tsx
+    │   │
+    │   ├── search/
+    │   │   └── page.tsx
+    │   │
+    │   ├── contact/
+    │   │   └── page.tsx
+    │   │
+    │   └── about/
+    │       └── page.tsx
+    │
+    ├── components/
+    │   ├── layout/
+    │   ├── ui/
+    │   └── providers/
+    │
+    ├── features/
+    │   ├── products/
+    │   │   ├── components/
+    │   │   ├── data/
+    │   │   └── types/
+    │   │
+    │   ├── categories/
+    │   │   └── components/
+    │   │
+    │   └── brands/
+    │
+    ├── services/
+    ├── types/
+    ├── hooks/
+    ├── lib/
+    └── config/

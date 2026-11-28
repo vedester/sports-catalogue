@@ -7,7 +7,7 @@ import ThemeToggle from "@/components/ui/theme-toggle";
 const navigation = [
   { label: "Home", href: "/" },
   { label: "Shop", href: "/products" },
-  { label: "Categories", href: "/#categories" },
+  { label: "Categories", href: "/categories" },
   { label: "Featured", href: "/#featured" },
 ];
 
