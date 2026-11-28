@@ -13,6 +13,8 @@ backend/db.sqlite3
 
 # Django uploads
 backend/media/
+# Database backups
+backend/*.sql
 
 # Next.js
 frontend/node_modules/
